@@ -1,0 +1,36 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+#include<iomanip>
+using namespace std;
+int main ()
+{
+	int bticket, sticket, pticket, gaticket;
+	int sold1, sold2, sold3, sold4;
+	double sb1, ss2, sp3, sga4;
+	double total, tsale;
+	bticket=100;
+	sticket=200;
+	pticket=300;
+	gaticket=400;
+	cout << "Ticket Price:			Number of Ticket" << endl;
+	cout << "100					";
+	cin >> sold1;
+	cout << "200					";
+	cin >> sold2;
+	cout << "300					";
+	cin >> sold3;
+	cout << "400					";
+	cin >> sold4;
+	cout <<"___________________________________________" << endl;
+	sb1=bticket*sold1;
+	ss2=sticket*sold2;
+	sp3=pticket*sold3;
+	sga4=gaticket*sold4;
+	total=sold1+sold2+sold3+sold4;
+	tsale=sb1+ss2+sp3+sga4;
+	cout << "Number of Tickets Sold:" << total << endl;
+	cout << "Sales:" << tsale << endl;
+	_getch();
+	return 0;
+}
